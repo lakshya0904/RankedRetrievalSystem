@@ -49,6 +49,8 @@ Enter the query: `tv`
 Enter your choice (either 1, 2, 3, 4 or 5): `1`
 
 Enter No. of documents to retrieve: `10`
+
+
 ['tv']
 Time:  0.0003894120000040857
 
@@ -102,6 +104,8 @@ In basic model impleneted in part 1 titles of documents are not given any import
 
 
 
+
+
 Finally, we use a combination of synonyms, zone indexing and champion list simultaneously. This is to indicate the scalability of our system that all the changes can work independently as well as in combination with other improvements in the system.
 <hr>
 
@@ -120,10 +124,11 @@ python3 test_queries.py
 ```
 <hr>
 
+
 ### Group Members
 
-- Lakshya Agarwal 2017B5A70904P
-- Anuj Hydrabadi 2017A8PS0420P
-- Samarth Gupta 2017B4A70467P
-- Raj Shree Singh 2017B4A70808P
-- Aditya Vishwakarma 2017B5A70954P
+- Lakshya Agarwal, 2017B5A70904P
+- Anuj Hydrabadi, 2017A8PS0420P
+- Samarth Gupta, 2017B4A70467P
+- Raj Shree Singh, 2017B4A70808P
+- Aditya Vishwakarma, 2017B5A70954P
