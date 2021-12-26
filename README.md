@@ -123,7 +123,9 @@ python3 build_index.py
 python3 test_queries.py
 ```
 <hr>
+
 Detailed design document along with results can be found [here](https://github.com/lakshya0904/RankedRetrievalSystem/blob/main/REPORT.pdf)
+
 <hr>
 
 ### Group Members
