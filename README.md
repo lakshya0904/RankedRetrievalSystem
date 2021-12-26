@@ -32,6 +32,7 @@ Detailed Problem Statement can be found [here](https://github.com/lakshya0904/Ra
 - pickle
 - numpy
 - requests
+<hr>
 
 ### Structure
 
@@ -39,6 +40,7 @@ There are 2 functionalities:
 
 1. index_builder: This file creates an inverted index for documents in the folder `wikis` and stores it in a pickle file for further processing.
 2. search: It takes as an input a query and gives as output the top K documents. This file never reads the text corpus.
+<hr>
 
 ### User Interface
 
@@ -66,6 +68,7 @@ score = 0.0783, document_id = 20659, title = mv blue marlin
 ```
 
 Enter 1 to go back to main menu else 0 to quit: 0
+<hr>
 
 ### Implementation Details
 
@@ -84,6 +87,7 @@ Weighting scheme for ranked retrieval is lnc.ltc:
 Time complexity will linearly depend on the number of term-document pairs for query terms.
 
 4. Documents are sorted by their scores in `(O(N log N)`, where N is the number of documents, containing query terms) to show top relevant.
+<hr>
 
 ### Improvements (Problem Statement Part 2)
 
@@ -96,9 +100,10 @@ In vector space model time consumed will be more because it will consider all do
 #### 3. Zone indexing
 In basic model impleneted in part 1 titles of documents are not given any importance, but it is quite intuitive that while dealing with Wikipedia Corpus titles have more importance. Improved proposed is that assigned score for a (query, document) pair will be linear combination of zone score. Two zones ‘content’ and ‘title’ have weights of 0.8 and 0.2, respectively. The improved score can be seen in examples like - jaguar, lunar eclipse, and Jaffrey Dahmer.
 
-<hr>
-Finally, we use a combination of synonyms, zone indexing and champion list simultaneously. This is to indicate the scalability of our system that all the changes can work independently as well as in combination with other improvements in the system.
 
+
+Finally, we use a combination of synonyms, zone indexing and champion list simultaneously. This is to indicate the scalability of our system that all the changes can work independently as well as in combination with other improvements in the system.
+<hr>
 
 ### Guidelines to run the assignments
 
@@ -113,7 +118,7 @@ python3 build_index.py
 ```
 python3 test_queries.py
 ```
-
+<hr>
 
 ### Group Members
 
